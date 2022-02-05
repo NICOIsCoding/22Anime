@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shift.DemonSlayer">
+    <StackLayout BackgroundColor="#5c3130" Padding="10">
+        <Grid RowSpacing="22">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Demon slayer" TextColor="#13060b" FontAttributes="Bold" FontSize="55"  HorizontalOptions="Center" />
+            <Label Grid.Row="1" Text="Animated series" TextColor="#13060b" FontSize="20" HorizontalOptions="Center"/>
+            <Label Grid.Row="2" Text="Rating : 8,7/10" TextColor="#13060b" FontSize="25" HorizontalOptions="Center"/>
+            <StackLayout Grid.Row="3">
+                <Image Source="Tanjiro.png" HorizontalOptions="Center" HeightRequest="215"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Label Text="Demon Slayer, known in Japan as Kimetsu no yaiba, is a manga series written and drawn by Koyoharu Gotōge. The story follows Kamado Tanjirō's journey as he searches for a way to make his little sister Nezuko human again after she turns into a demon." 
+                       TextColor="#13060b" FontSize="22" HorizontalOptions="CenterAndExpand"
+                       FontAttributes="None" Margin="10,5"/>
+            </StackLayout>
+            <Button x:Name="ButtonMenu" Grid.Row="5" CornerRadius="10" BackgroundColor="#361a1b" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center"/>
+
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>

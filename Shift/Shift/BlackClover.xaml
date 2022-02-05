@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shift.BlackClover">
+
+    <StackLayout BackgroundColor="#2d2d2d" Padding="10">
+        <Grid RowSpacing="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Black Clover" TextColor="#13060b" FontAttributes="Bold" FontSize="52"  HorizontalOptions="Center" />
+            <Label Grid.Row="1" Text="Animated series" TextColor="#13060b" FontSize="20" HorizontalOptions="Center"/>
+            <Label Grid.Row="2" Text="Rating : 8.3/10" TextColor="#13060b" FontSize="25" HorizontalOptions="Center"/>
+            <StackLayout Grid.Row="3">
+                <Image Source="BlackClover.png" HorizontalOptions="Center" HeightRequest="235"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Label Text="Black Clover is a Japanese manga series written and illustrated by Yūki Tabata. The story follows Asta, a young boy born without any magic power. This is unknown to the world he lives in because seemingly everyone has some sort of magic power. With his fellow mages from the Black Bulls, Asta plans to become the next Wizard King." 
+                       TextColor="Black" FontSize="22" HorizontalOptions="CenterAndExpand"
+                       FontAttributes="None" Margin="10"/>
+            </StackLayout>
+            <Button Grid.Row="5" CornerRadius="10" BackgroundColor="#1b1b1b" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" />
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
