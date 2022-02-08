@@ -21,7 +21,7 @@ namespace Shift
         {
             Button button = (Button)sender;
             button.Text = "Loading...";
-            await Navigation.PushModalAsync(new MainPage());
+            await Navigation.PopModalAsync();
         }
     }
 }

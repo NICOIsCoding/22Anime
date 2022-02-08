@@ -11,6 +11,9 @@ namespace Shift
             InitializeComponent();
 
             MainPage = new MainPage();
+            // var pagePrincipale = (MainPage)Application.Current.MainPage;
+
+
         }
 
         protected override void OnStart()

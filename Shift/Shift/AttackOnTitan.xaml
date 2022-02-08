@@ -3,31 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shift.AttackOnTitan">
 
-    <StackLayout BackgroundColor="#97a87c" Padding="10">
-        <Grid RowSpacing="6">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0" Text="Attack on Titan" TextColor="#13060b" FontAttributes="Bold" FontSize="52"  HorizontalOptions="Center" />
-            <Label Grid.Row="1" Text="Animated series" TextColor="#13060b" FontSize="20" HorizontalOptions="Center"/>
-            <Label Grid.Row="2" Text="Rating : 9/10" TextColor="#13060b" FontSize="25" HorizontalOptions="Center"/>
-            <StackLayout Grid.Row="3">
-                <Image Source="snklogo.png" HorizontalOptions="Center" HeightRequest="215"/>
-            </StackLayout>
-            <StackLayout Grid.Row="4">
-                <Label Text="Set in a post-apocalyptic world where the remains of humanity live behind walls protecting them from giant humanoid Titans, Attack on Titan follows protagonist Eren Jaeger, along with friends Mikasa Ackerman and Armin Arlert. When a Colossal Titan breaches the wall of their hometown, Titans destroy the city and kill Eren's mother. Vowing revenge, Eren joins the elite Survey Corps, a group of soldiers who fight against Titans. Attack on Titan chronicles Eren's journey with the Survey Corps as they fight against the Titans while investigating their origin and history." 
-                       TextColor="#13060b" FontSize="17" HorizontalOptions="CenterAndExpand"
-                       FontAttributes="None" Margin="10"/>
-            </StackLayout>
-            <Button Grid.Row="5" CornerRadius="10" BackgroundColor="#6B755C" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center"/>
+    <ScrollView>
+        <StackLayout BackgroundColor="#b9aa90" Padding="10">
+            <Grid RowSpacing="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" HasShadow="True" BackgroundColor="#b9aa90" Margin="20,10" BorderColor="Black">
+                    <Label Text="Attack On Titan" TextColor="#5d5548" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Image Grid.Row="1" Source="SnkPersonnage1" />
+                <Image Grid.Row="2" Source="SnkPersonnage2" TranslationY="-55" Margin="-13"/>
+                <Image Grid.Row="3" Source="SnkPersonnage3" TranslationY="-65" Margin="-2"/>
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#5d5548" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" TranslationY="-30"/>
+            </Grid>
 
-        </Grid>
-
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>

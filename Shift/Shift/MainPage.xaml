@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shift.MainPage">
 
-<ScrollView>
-        <StackLayout x:Name="bgcolor" BackgroundColor="#5D1DB0" Padding="10">
+<ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout x:Name="bgcolor" BackgroundColor="#5D1DB0">
             <Grid RowSpacing="40">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -12,30 +12,29 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <StackLayout x:Name="bgcolor2" BackgroundColor="#5D1DB0" TranslationY="-50" HeightRequest="300" HorizontalOptions="FillAndExpand"/>
-                <StackLayout Grid.Row="0" >
+                <StackLayout Grid.Row="0" Margin="30">
                     <Label Text="アニメート" TextColor="White" FontSize="55" HorizontalOptions="Center" />
                     <Label Text="Best Anime of 2022" TextColor="Black" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold"/>
                     <Label Text="アニメート" TextColor="Black" FontSize="55"  HorizontalOptions="Center" TranslationY="-120"/>
-                    <Label Text="Best Anime of 2022" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TranslationY="-120"/>
+                    <Label Text="Best Anime of 2022" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TranslationY="-120.5"/>
                 </StackLayout>
-                <StackLayout Grid.Row="1" TranslationY="-180" Spacing="10">
-                    <Button x:Name="ColorChange" BorderColor="Black" BorderWidth="2" Text="Color" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="9" HorizontalOptions="Center" HeightRequest="35" BackgroundColor="White" Clicked="ChangeColor" CornerRadius="20" />
-                    <Button x:Name="ResetColor" BorderColor="Black" BorderWidth="2" Text="Reset" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="9" HorizontalOptions="Center" HeightRequest="35" BackgroundColor="White" Clicked="Reset" CornerRadius="20" />
-                    <Button x:Name="AboutMe" BorderColor="Black" BorderWidth="2" Text="About me" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="9" HorizontalOptions="Center" HeightRequest="35" BackgroundColor="White" Clicked="AboutMeButton" CornerRadius="20" />
+                <StackLayout Grid.Row="1" TranslationY="-180" Spacing="10" Margin="120,10">
+                    <Button x:Name="ColorChange" BorderColor="Black" BorderWidth="2" Text="Color" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="Fill" HeightRequest="45" BackgroundColor="White" Clicked="ChangeColor" CornerRadius="20" />
+                    <Button x:Name="ResetColor" BorderColor="Black" BorderWidth="2" Text="Reset" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="Fill" HeightRequest="45" BackgroundColor="White" Clicked="Reset" CornerRadius="20" />
+                    <Button x:Name="SettingsColor" BorderColor="Black" BorderWidth="2" Text="Settings" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="FillAndExpand" HeightRequest="45" BackgroundColor="White" Clicked="AboutMeButton" CornerRadius="20" />
                 </StackLayout>
-                <StackLayout Grid.Row="2" Spacing="25">
+                <StackLayout Grid.Row="2" Spacing="25" Margin="15,-55">
                     <Label x:Name="ClickOnImage" Text="Click on the image" TextColor="Black" FontSize="12" HorizontalTextAlignment="Center" FontAttributes="Bold" TranslationY="-130"/>
-                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" HeightRequest="200" TranslationY="-150" CornerRadius="20" Padding="5" x:Name="Anime_1"  >
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_1"  >
                         <ImageButton Source="demon_slayer.png" BackgroundColor="Black" CornerRadius="15" Clicked="DemonClick" Opacity="0.8"/>
                     </Frame>
-                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" HeightRequest="200" TranslationY="-150" ScaleX="0.98"  CornerRadius="20" Padding="5" x:Name="Anime_2" >
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" HeightRequest="200" TranslationY="-150"  CornerRadius="20" Padding="5" x:Name="Anime_2" >
                         <ImageButton Source="snk.png" BackgroundColor="Black" CornerRadius="15" Clicked="SnkClick" Opacity="0.8" />
                     </Frame>
-                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" HeightRequest="200" TranslationY="-150" CornerRadius="20" ScaleX="0.98" Padding="5" x:Name="Anime_3">
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" HeightRequest="200" Padding="5" x:Name="Anime_3">
                         <ImageButton Source="BlackCloverLogo.png" BackgroundColor="Black" CornerRadius="15" Clicked="BlackCloverClick" Opacity="0.8"/>
                     </Frame>
-                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" HeightRequest="200" TranslationY="-150" CornerRadius="20" Padding="5" x:Name="Anime_4">
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_4">
                         <ImageButton Source="OPMLogo.png" BackgroundColor="Black" CornerRadius="15" Clicked="OnePunchManClick" Opacity="0.8" />
                     </Frame>
                 </StackLayout>

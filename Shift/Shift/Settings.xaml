@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shift.Settings">
+
+    <StackLayout BackgroundColor="#5D1DB0" Padding="10,25">
+        <Grid RowSpacing="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" HorizontalOptions="Center" HasShadow="True" CornerRadius="15" BackgroundColor="#5D1DB0" BorderColor="#3A136A">
+                <Label Text="Settings" TextColor="#3A136A" FontSize="50" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Row="1" Padding="10" Margin="10" HeightRequest="250" BackgroundColor="#5D1DB0" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="1" Text="THEME" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" FontAttributes="Bold" />
+                    <Button Grid.Row="1" Grid.Column="0" Text="DARK" BorderColor="Black" BorderWidth="2" TextColor="Black" FontAttributes="Bold" FontSize="12" HorizontalOptions="Center" BackgroundColor="#5D1DB0" Clicked="DarkTheme"/>
+                    <Button Grid.Row="1" Grid.Column="2" Text="LIGHT" BorderColor="Black" BorderWidth="2" TextColor="Black" FontAttributes="Bold" FontSize="12" HorizontalOptions="Center" BackgroundColor="#5D1DB0" Clicked="LightTheme"/>
+                    <!-- <Label Grid.Row="2" Grid.Column="1" Text="Ask me something"  HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" FontAttributes="Bold" />
+                    <Entry x:Name="entry" Grid.Row="3" Placeholder="Here" Grid.Column="1" PlaceholderColor="#3A136A" MaxLength="50" ClearButtonVisibility="WhileEditing" Keyboard="Text" ReturnType="Send" IsSpellCheckEnabled="false" Completed="entry_Completed" TextChanged="entry_TextChanged"/> -->
+                </Grid>
+            </Frame>
+            <Button Grid.Row="2" CornerRadius="10" BackgroundColor="Black" Text="BACK" TextColor="White" Clicked="ButtonMenu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" Margin="0,150"/>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

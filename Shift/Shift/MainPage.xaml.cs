@@ -41,13 +41,12 @@ namespace Shift
 
             button.TextColor = colors;
             bgcolor.BackgroundColor = colors;
-            bgcolor2.BackgroundColor = colors;
             ResetColor.TextColor = colors;
             Anime_1.BackgroundColor = colors;
             Anime_2.BackgroundColor = colors;
             Anime_3.BackgroundColor = colors;
             Anime_4.BackgroundColor = colors;
-            AboutMe.TextColor = colors;
+            SettingsColor.TextColor = colors;
         }
 
         private void Reset(object sender, EventArgs e)
@@ -56,13 +55,12 @@ namespace Shift
             var purple = Color.FromRgb(93, 29, 176); ;
             button.TextColor = purple;
             bgcolor.BackgroundColor = purple;
-            bgcolor2.BackgroundColor = purple;
             ColorChange.TextColor = purple;
             Anime_1.BackgroundColor = purple;
             Anime_2.BackgroundColor = purple;
             Anime_3.BackgroundColor = purple;
             Anime_4.BackgroundColor = purple;
-            AboutMe.TextColor = purple;
+            SettingsColor.TextColor = purple;
         }
 
         private async void SnkClick(object sender, EventArgs e)
@@ -72,7 +70,7 @@ namespace Shift
 
         private async void AboutMeButton(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new AboutMePage());
+            await Navigation.PushModalAsync(new Settings());
         }
 
         private async void BlackCloverClick(object sender, EventArgs e)
@@ -84,6 +82,7 @@ namespace Shift
         {
             await Navigation.PushModalAsync(new OnePunchMan());
         }
-    }
 
+
+    }
 }

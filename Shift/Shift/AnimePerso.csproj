@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentEmail.Smtp" Version="3.0.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -22,8 +23,8 @@
     <Compile Update="AttackOnTitan.xaml.cs">
       <DependentUpon>AttackOnTitan.xaml</DependentUpon>
     </Compile>
-    <Compile Update="AboutMePage.xaml.cs">
-      <DependentUpon>AboutMePage.xaml</DependentUpon>
+    <Compile Update="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Compile Update="BlackClover.xaml.cs">
       <DependentUpon>BlackClover.xaml</DependentUpon>
@@ -40,7 +41,7 @@
     <EmbeddedResource Update="AttackOnTitan.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="AboutMePage.xaml">
+    <EmbeddedResource Update="Settings.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="BlackClover.xaml">
