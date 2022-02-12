@@ -62,6 +62,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -128,9 +131,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Shift\AnimePerso.csproj">
+    <ProjectReference Include="..\Shift\Shift.csproj">
       <Project>{9AA52A1F-FB69-4674-A918-C16CD3ACEEA2}</Project>
-      <Name>AnimePerso</Name>
+      <Name>Shift</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

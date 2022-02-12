@@ -19,7 +19,7 @@
                 <Image Grid.Row="1" Source="SnkPersonnage1" />
                 <Image Grid.Row="2" Source="SnkPersonnage2" TranslationY="-55" Margin="-13"/>
                 <Image Grid.Row="3" Source="SnkPersonnage3" TranslationY="-65" Margin="-2"/>
-                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#5d5548" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" TranslationY="-30"/>
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#5d5548" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="60" WidthRequest="100" HorizontalOptions="Center" TranslationY="-30"/>
             </Grid>
 
         </StackLayout>

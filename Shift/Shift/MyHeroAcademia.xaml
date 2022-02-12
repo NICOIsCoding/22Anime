@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shift.MyHeroAcademia">
+    
+    <ScrollView>
+        <StackLayout BackgroundColor="#1a6b44" Padding="10">
+            <Grid RowSpacing="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" HasShadow="True" BackgroundColor="#1a6b44" Margin="20,10" BorderColor="Black">
+                    <Label Text="My Hero Academia" TextColor="#0a2b1b" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Image Grid.Row="1" Source="MHAPersonnage" />
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#0a2b1b" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="60" WidthRequest="100" HorizontalOptions="Center" TranslationY="-320"/>
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

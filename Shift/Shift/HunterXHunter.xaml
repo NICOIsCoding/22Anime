@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shift.HunterXHunter">
+    
+    <ScrollView>
+        <StackLayout BackgroundColor="#61b055" Padding="10">
+            <Grid RowSpacing="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" HasShadow="True" BackgroundColor="#61b055" Margin="20,10" BorderColor="Black">
+                    <Label Text="Hunter X Hunter" TextColor="#212d24" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Image Grid.Row="1" Source="HunterPersonnage" />
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#212d24" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="60" WidthRequest="100" HorizontalOptions="Center" TranslationY="-220"/>
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

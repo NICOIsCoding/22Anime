@@ -81,9 +81,9 @@
     <AndroidResource Include="Resources\drawable\demon_slayer.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Shift\AnimePerso.csproj">
+    <ProjectReference Include="..\Shift\Shift.csproj">
       <Project>{9AA52A1F-FB69-4674-A918-C16CD3ACEEA2}</Project>
-      <Name>AnimePerso</Name>
+      <Name>Shift</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -135,13 +135,19 @@
     <AndroidResource Include="Resources\drawable\SnkPersonnage3.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\BlackCloverPersonnage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-hdpi\icon_adaptive_back.png" />
+    <AndroidResource Include="Resources\drawable\OPMPersonnage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-hdpi\icon_adaptive_fore.png" />
+    <AndroidResource Include="Resources\drawable\MHAPersonnage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MHALogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\HunterLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
@@ -183,16 +189,24 @@
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BlackCloverPersonnage.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\OPMPersonnage.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon_adaptive_back.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MHAPersonnage.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon_adaptive_fore.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MHALogo.png" />
+    <AndroidResource Include="Resources\drawable\HunterPersonnage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\discordicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionShiftAndroidHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

@@ -4,7 +4,7 @@
              x:Class="Shift.OnePunchMan">
 
     <ScrollView>
-        <StackLayout BackgroundColor="#46656a" Padding="10">
+        <StackLayout BackgroundColor="#25417e" Padding="10">
             <Grid RowSpacing="12">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -13,11 +13,11 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Frame Grid.Row="0" HasShadow="True" BackgroundColor="#46656a" Margin="20,10" BorderColor="Black">
-                    <Label Text="One Punch Man" TextColor="#233335" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
+                <Frame Grid.Row="0" HasShadow="True" BackgroundColor="#25417e" Margin="20,10" BorderColor="Black">
+                    <Label Text="One Punch Man" TextColor="#171c33" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
                 </Frame>
                 <Image Grid.Row="1" Source="OPMPersonnage" />
-                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#233335" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" TranslationY="-30"/>
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#171c33" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="60" WidthRequest="100" HorizontalOptions="Center" TranslationY="-140"/>
             </Grid>
 
         </StackLayout>

@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shift.DemonSlayer">
+    
     <ScrollView>
-        <StackLayout BackgroundColor="#6c3ca6" Padding="10">
+        <StackLayout x:Name="DemonSlayerContext" BackgroundColor="#6c3ca6" Padding="10">
             <Grid RowSpacing="12">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -16,7 +17,7 @@
                 </Frame>
                 <Image Grid.Row="1" Source="DemonSlayerPersonnage1" />
                 <Image Grid.Row="2" Source="DemonSlayerPersonnage2" TranslationY="-40" Margin="2"/>
-                <Button x:Name="ButtonMenu" Grid.Row="3" CornerRadius="10" BackgroundColor="#412464" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" TranslationY="-50"/>
+                <Button x:Name="ButtonMenu" Grid.Row="3" CornerRadius="10" BackgroundColor="#412464" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="50" WidthRequest="100" HorizontalOptions="Center" TranslationY="-100"/>
             </Grid>
 
         </StackLayout>

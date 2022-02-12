@@ -10,20 +10,21 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <StackLayout Grid.Row="0" Margin="30">
                     <Label Text="アニメート" TextColor="White" FontSize="55" HorizontalOptions="Center" />
-                    <Label Text="Best Anime of 2022" TextColor="Black" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold"/>
-                    <Label Text="アニメート" TextColor="Black" FontSize="55"  HorizontalOptions="Center" TranslationY="-120"/>
-                    <Label Text="Best Anime of 2022" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TranslationY="-120.5"/>
+                    <Label Text="All characters !" TextColor="Black" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label x:Name="ChingChong" Text="アニメート" TextColor="Black" FontSize="55"  HorizontalOptions="Center" TranslationY="-134"/>
+                    <Label Text="All characters !" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TranslationY="-134"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" TranslationY="-180" Spacing="10" Margin="120,10">
                     <Button x:Name="ColorChange" BorderColor="Black" BorderWidth="2" Text="Color" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="Fill" HeightRequest="45" BackgroundColor="White" Clicked="ChangeColor" CornerRadius="20" />
                     <Button x:Name="ResetColor" BorderColor="Black" BorderWidth="2" Text="Reset" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="Fill" HeightRequest="45" BackgroundColor="White" Clicked="Reset" CornerRadius="20" />
-                    <Button x:Name="SettingsColor" BorderColor="Black" BorderWidth="2" Text="Settings" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="FillAndExpand" HeightRequest="45" BackgroundColor="White" Clicked="AboutMeButton" CornerRadius="20" />
+                    <Button x:Name="CallMe" BorderColor="Black" BorderWidth="2" Text="Contact Me" TextColor="#5D1DB0" FontAttributes="Bold" FontSize="12" HorizontalOptions="FillAndExpand" HeightRequest="45" BackgroundColor="White" Clicked="CallMeClick" CornerRadius="20" />
                 </StackLayout>
-                <StackLayout Grid.Row="2" Spacing="25" Margin="15,-55">
+                <StackLayout Grid.Row="3" Spacing="25" Margin="15,-115">
                     <Label x:Name="ClickOnImage" Text="Click on the image" TextColor="Black" FontSize="12" HorizontalTextAlignment="Center" FontAttributes="Bold" TranslationY="-130"/>
                     <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_1"  >
                         <ImageButton Source="demon_slayer.png" BackgroundColor="Black" CornerRadius="15" Clicked="DemonClick" Opacity="0.8"/>
@@ -37,7 +38,20 @@
                     <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_4">
                         <ImageButton Source="OPMLogo.png" BackgroundColor="Black" CornerRadius="15" Clicked="OnePunchManClick" Opacity="0.8" />
                     </Frame>
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_5">
+                        <ImageButton Source="MHALogo.png" BackgroundColor="Black" CornerRadius="15" Clicked="MyHeroAcademiaClick" Opacity="0.8" />
+                    </Frame>
+                    <Frame BackgroundColor="#5d1db0" VerticalOptions="End" HasShadow="True" TranslationY="-150" CornerRadius="20" Padding="5" HeightRequest="200"  x:Name="Anime_6">
+                        <ImageButton Source="HunterLogo.png" BackgroundColor="Black" CornerRadius="15" Clicked="HunterClick" Opacity="0.8" />
+                    </Frame>
                 </StackLayout>
+                <Switch Grid.Row="2" TranslationY="-380" HorizontalOptions="End" Toggled="DarkOrWhite" OnColor="Black" ThumbColor="White" >
+                    <!-- <Switch.Triggers>
+                        <DataTrigger TargetType="Switch" Binding="{Binding Source={x:Reference DemonSlayerContext}}" Value="True">
+                            <Setter Property="BackgroundColor" Value="Blue"/>
+                        </DataTrigger>
+                    </Switch.Triggers> -->
+                </Switch>
             </Grid>
         </StackLayout>
 </ScrollView>

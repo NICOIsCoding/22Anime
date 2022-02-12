@@ -17,7 +17,7 @@
                     <Label Text="Black Clover" TextColor="#233335" FontAttributes="Bold" FontSize="45"  HorizontalTextAlignment="Center"/>
                 </Frame>
                 <Image Grid.Row="1" Source="BlackCloverPersonnage" />
-                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#233335" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="12" HeightRequest="50" HorizontalOptions="Center" TranslationY="-30"/>
+                <Button x:Name="ButtonMenu" Grid.Row="4" CornerRadius="10" BackgroundColor="#233335" Text="BACK" TextColor="White" Clicked="Button_Menu" FontAttributes="Bold" FontSize="16" HeightRequest="60" WidthRequest="100" HorizontalOptions="Center" TranslationY="-30"/>
             </Grid>
 
         </StackLayout>
